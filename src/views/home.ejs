@@ -7,19 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="log-in">
+  <ul>
+    <button><a href="/login">Se connecter</a></button>
+    <button><a href="/signup">S'inscrire</a></button>
+  </ul>
+</div>
     <h1>Liste des Tache</h1>
     <form action="/lists" method="POST">
       <label for="name">Name:</label>
       <input type="text" name="name" />
       <input type="submit" />
     </form>
-  
-    <ul>
+  <ul class="one"> 
       <% lists.forEach((liste) => { %>
-        <li><a href="<%= `/see/${liste.id}` %>"><%= liste.name %></a></li>
-      <% }) %>
-
-
-    
-</body>
+    <li>
+      <a href="/see/<%= liste.id%>">
+          <form action=<%=`/see/delete/${liste.id}`%> method="GET">
+              <label for="<%= liste.name %>"><%= liste.name %></label>
+              <input type="submit" value="delete" />
+          </form>
+      </a>
+    </li>
+        <% }) %>
+  </ul>
+  </body>
 </html>

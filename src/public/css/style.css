@@ -1,12 +1,63 @@
 body{
     background-color: rgb(44, 212, 72);
 }
-/* form {
-    border: solid;
-    padding: 20px;
+
+.log-in ul{ 
+display: flex;
+
+  
+    
+}
+.log-in ul{ 
+    display: flex;
+    justify-content: flex-end;
+
+}    
+.log-in ul button {
+    text-decoration: none;
+    padding: 1%;
+    margin: 1%;
+    background-color:red;
+    display: flex;
+    
+   
+   
+
+}
+form {
+    border: 1px solid cornflowerblue;
+    padding: 2%;
     display: flex;
     flex-direction: column;
 }
-input[type="submit" i{
+.all-listes{
     background-color: brown;
-} */
+}
+
+.one{
+    
+    padding: 2%;
+    margin: 2%;
+
+}
+.one >ul{
+    border: solid;
+    padding: 2%;
+    box-shadow: beige;
+    
+    
+
+}
+.one input{
+    width: 40px;
+    box-shadow: beige;
+    
+    
+
+}
+form label input{
+    width: 40px;
+    
+    
+
+}

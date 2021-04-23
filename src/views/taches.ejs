@@ -7,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>une des nos Tache</h1>
-    <% lists.forEach((list) => { %>
-        <li><%= `${list.name}` %></a></li>
+    <div class="all-listes">
+        <h1>le detaile de nos Tache</h1>
+         <% lists.forEach((liste) => { %>
+            <li><%= `${liste.username }` %></a></li>
+            <li><%= `${liste.start_date}` %></a></li>
+            <li><%= `${liste.status}` %></a></li>
+            <li><%= `${liste.telephn}` %></a></li>
+    </div>
       <% }) %>
   
 </body>
